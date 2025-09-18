@@ -2,7 +2,8 @@ import streamlit as st
 import requests
 
 # Rasa REST API endpoint
-RASA_URL = "http://localhost:5005/webhooks/rest/webhook"
+RASA_URL = "https://your-rasa-server.com/webhooks/rest/webhook"
+
 
 st.set_page_config(page_title="Healthcare Chatbot", page_icon="💬", layout="centered")
 
@@ -66,3 +67,4 @@ if st.button("Send"):
         bot_reply = get_bot_response(user_message)
         st.session_state.messages.append({"role": "bot", "content": bot_reply})
         st.rerun()
+
