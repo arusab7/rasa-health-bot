@@ -1,0 +1,83 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hi
+    - hello
+    - hey
+    - good morning
+    - good evening
+    - hey there
+
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - see you later
+    - talk to you later
+    - see ya
+
+- intent: affirm
+  examples: |
+    - yes
+    - yeah
+    - sure
+    - absolutely
+    - of course
+
+- intent: deny
+  examples: |
+    - no
+    - not really
+    - nope
+    - I don't think so
+
+- intent: mood_great
+  examples: |
+    - I am feeling good
+    - I am happy
+    - I'm fine
+    - feeling awesome
+    - I am great
+
+- intent: mood_unhappy
+  examples: |
+    - I am sad
+    - I feel down
+    - I'm not feeling well
+    - I am upset
+    - feeling bad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you human?
+    - who are you?
+    - what are you?
+
+- intent: symptom_check
+  examples: |
+    - I have a headache
+    - My throat hurts
+    - I feel feverish
+    - I have stomach pain
+    - I feel dizzy
+    - I have cough and cold
+    - I am feeling nauseous
+
+- intent: health_tips
+  examples: |
+    - Give me health tips
+    - How can I stay healthy?
+    - Share some health advice
+    - What should I do to stay fit?
+    - I need wellness tips
+
+- intent: thank_you
+  examples: |
+    - thanks
+    - thank you
+    - thanks a lot
+    - thank you very much
+    - appreciate it

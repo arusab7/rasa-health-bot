@@ -1,0 +1,49 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - symptom_check
+  - health_tips
+  - thank_you
+
+responses:
+  utter_greet:
+    - text: "Hello! I’m your healthcare assistant. How can I help you today?"
+
+  utter_goodbye:
+    - text: "Goodbye! Take care of your health."
+
+  utter_ask_symptom_details:
+    - text: "Can you tell me more about your symptoms? For example, how long have you had them?"
+
+  utter_symptom_advice:
+    - text: "Based on your symptoms, I recommend consulting a doctor if it persists or worsens. Drink plenty of water and rest."
+
+  utter_health_tips:
+    - text: "Here are some health tips: Eat balanced meals, exercise regularly, sleep well, and stay hydrated."
+
+  utter_cheer_up:
+    - text: "Here is something to cheer you up:"
+      image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_happy:
+    - text: "Glad to hear that! Keep it up 🙂"
+
+  utter_sad:
+    - text: "I’m sorry to hear that. Maybe talking about it will help. I'm here to assist you."
+
+  utter_thank_you:
+    - text: "You're welcome! Happy to help."
+
+  utter_options:
+    - text: "Select an option or type your query:\n1. Check symptoms\n2. Health tips\n3. Talk about mood"
+
+  utter_iamabot:
+    - text: "I am a bot, here to assist you with healthcare advice."
+

@@ -1,0 +1,24 @@
+version: "3.1"
+
+rules:
+
+- rule: Show options after greeting
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_options
+
+- rule: Respond to bot challenge
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Say goodbye anytime
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Reply to thanks
+  steps:
+  - intent: thank_you
+  - action: utter_thank_you

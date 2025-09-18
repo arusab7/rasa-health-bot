@@ -1,0 +1,34 @@
+version: "3.1"
+
+stories:
+- story: greet and mood
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_options
+  - intent: mood_unhappy
+  - action: utter_sad
+  - intent: mood_great
+  - action: utter_happy
+
+- story: symptom checking
+  steps:
+  - intent: symptom_check
+  - action: utter_ask_symptom_details
+  - intent: symptom_check
+  - action: utter_symptom_advice
+
+- story: health tips
+  steps:
+  - intent: health_tips
+  - action: utter_health_tips
+
+- story: thank you
+  steps:
+  - intent: thank_you
+  - action: utter_thank_you
+
+- story: goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
